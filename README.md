@@ -9,3 +9,7 @@ Automated tests for https://practicesoftwaretesting.com/ based on the Gherkin sc
 * If login failed: Account locked, too many failed attempts. In this case please use the another demo account (change data in `VALID_USER` in the test-data.js):
  ---** Email: `customer2@practicesoftwaretesting.com`
  ---** Password: `welcome01`
+ ## Structure
+* `src/core/` — base classes (`BaseComponent`, `BasePage`), independent of the site
+* `src/business/` — pages, header component, test data
+* `tests/` — tests
