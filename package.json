@@ -1,0 +1,17 @@
+{
+  "name": "taf_playwright",
+  "version": "1.0.0",
+  "description": "[Module 07] Test Automation Framework with Playwright",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "author": "Nina Stasenko",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6"
+  }
+}
