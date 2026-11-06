@@ -1,5 +1,5 @@
 import { test, expect } from './fixtures.js';
-import { CONTACT_FORM } from '../src/business/utils/test-data.js';
+import { CONTACT_FORM } from './test-data.js';
 
 test.describe('Contact form', () => {
     test('Scenario: User should send the contact form', async ({ homePage, header, contactPage }) => {

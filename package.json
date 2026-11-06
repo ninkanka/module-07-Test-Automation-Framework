@@ -4,8 +4,8 @@
   "description": "[Module 07] Test Automation Framework with Playwright",
   "type": "module",
   "scripts": {
-    "test": "playwright test",
-    "test:headed": "playwright test --headed",
+    "test": "playwright test --config=src/core/playwright.config.js",
+    "test:headed": "playwright test --headed --config=src/core/playwright.config.js",
     "report": "playwright show-report"
   },
   "author": "Nina Stasenko",
