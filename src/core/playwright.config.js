@@ -1,13 +1,25 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const rootDir = path.resolve(__dirname, '../..');
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: path.resolve(rootDir, 'src/tests'),
+  outputDir: path.resolve(rootDir, 'test-results'),
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: 1,
   workers: 1,
-  reporter: 'html',
+  reporter: [
+    ['list'],
+     ['html', {
+            outputFolder: path.resolve(rootDir, 'playwright-report'),
+            open: 'never',
+        }],
+],
   use: {
     baseURL: 'https://practicesoftwaretesting.com',
         testIdAttribute: 'data-test',

@@ -1,4 +1,4 @@
-import { BasePage } from '../../core/base.page.js';
+import { BasePage } from './base.page.js';
 
 export class RegisterPage extends BasePage {
     async register(user) {

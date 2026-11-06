@@ -1,4 +1,4 @@
-import { BaseComponent } from '../../core/base.page.js';
+import { BaseComponent } from '../pages/base.page.js';
 
 export class HeaderComponent extends BaseComponent {
     userMenu() {

@@ -1,9 +1,9 @@
 import { test as base, expect } from '@playwright/test';
-import { HomePage } from '../src/business/pages/home.page.js';
-import { LoginPage } from '../src/business/pages/login.page.js';
-import { ContactPage } from '../src/business/pages/contact.page.js';
-import { RegisterPage } from '../src/business/pages/register.page.js';
-import { HeaderComponent } from '../src/business/components/header.component.js';
+import { HomePage } from '../business/pages/home.page.js';
+import { LoginPage } from '../business/pages/login.page.js';
+import { ContactPage } from '../business/pages/contact.page.js';
+import { RegisterPage } from '../business/pages/register.page.js';
+import { HeaderComponent } from '../business/components/header.component.js';
 
 export const test = base.extend({
     homePage: async ({ page }, use) => use(new HomePage(page)),

@@ -1,5 +1,5 @@
 import { test, expect } from './fixtures.js';
-import { VALID_USER, buildNewUser } from '../src/business/utils/test-data.js';
+import { VALID_USER, buildNewUser } from './test-data.js';
 
 test.describe('Authentication', () => {
   test('Scenario: User signs in with valid information', async ({ loginPage, header }) => {
