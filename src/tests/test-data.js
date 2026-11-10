@@ -1,5 +1,5 @@
 export const VALID_USER = {
-    email: 'customer@practicesoftwaretesting.com',
+    email: 'customer2@practicesoftwaretesting.com',
     password: 'welcome01',
 };
 
